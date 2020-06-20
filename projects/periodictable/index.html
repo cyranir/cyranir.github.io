@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Periodic Table</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <center>
+<h1>Periodic Table</h1>
+<a href="https://cyrnair.github.io/projects">Go back to projects</a>
+
+<div id ="det" style="display:none">
+
+<table id="featuredElement">
+  <tr>
+    <td id="num">num</td>
+    <td id= "w">w</td>
+  </tr>
+  <tr>
+    <td id="sym" colspan="2">sym</td>
+  </tr>
+  <tr>
+    <td id="name" colspan="2">name</td>
+  </tr>
+  </table>
+  </div>
+
+<div id="type" style="display:none"></div>
+
+
+<p id="details">click on a symbol to start</p>
+</center>
+<!-- header -->
+<table>
+  <tr>
+    <th>Group</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th></th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th>9</th>
+    <th>10</th>
+    <th>11</th>
+    <th>12</th>
+    <th>13</th>
+    <th>14</th>
+    <th>15</th>
+    <th>16</th>
+    <th>17</th>
+    <th>18</th>
+  </tr>
+  <!-- Period 1-->
+  <tr>
+    <td>Period 1</td>
+    <td>​<button id="nonmetal" onclick="showH()">H</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty2">x</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td>​<button id="noble" onclick="showHe()">He</button></td>
+  </tr>
+<!-- period 2-->
+  <tr>
+    <td>Period 2</td>
+    <td><button id="alkali" onclick="showLi()">Li</button></td>
+    <td>​<button id="alkaline" onclick="showBe()">Be</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty2">x</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="metalloid" onclick="showB()">B</button></td>
+    <td>​<button id="nonmetal" onclick="showC()">C</button></td>
+    <td>​<button id="nonmetal" onclick="showN()">N</button></td>
+    <td>​<button id="nonmetal" onclick="showO()">O</button></td>
+    <td>​<button id="nonmetal" onclick="showF()">F</button></td>
+    <td><button id="noble" onclick="showNe()">Ne</button></td>
+  </tr>
+<!-- period 3 -->
+  <tr>
+    <td>Period 3</td>
+    <td><button id="alkali" onclick="showNa()">Na</button></td>
+    <td>​<button id="alkaline" onclick="showMg()">Mg</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty2">x</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="empty1">X</button></td>
+    <td><button id="posttransition" onclick="showAl()">Al</button></td>
+    <td>​<button id="metalloid" onclick="showSi()">Si</button></td>
+    <td>​<button id="nonmetal" onclick="showP()">P</button></td>
+    <td>​<button id="nonmetal" onclick="showS()">S</button></td>
+    <td>​<button id="nonmetal" onclick="showCl()">Cl</button></td>
+    <td><button id="noble" onclick="showAr()">Ar</button></td>
+  </tr>
+  <!-- period 4 -->
+  <tr>
+    <td>Period 4</td>
+    <td><button id="alkali" onclick="showK()">K</button></td>
+    <td>​<button id="alkaline" onclick="showCa()">Ca</button></td>
+    <td><button id="transition" onclick="showSc()">Sc</button></td>
+    <td><button id="empty2">x</button></td>
+    <td><button id="transition" onclick="showTi()">Ti</button></td>
+    <td><button id="transition" onclick="showV()">V</button></td>
+    <td><button id="transition" onclick="showCr()">Cr</button></td>
+    <td><button id="transition" onclick="showMn()">Mn</button></td>
+    <td><button id="transition" onclick="showFe()">Fe</button></td>
+    <td><button id="transition" onclick="showCo()">Co</button></td>
+    <td><button id="transition" onclick="showNi()">Ni</button></td>
+    <td><button id="transition" onclick="showCu()">Cu</button></td>
+    <td><button id="posttransition" onclick="showZn()">Zn</button></td>
+    <td><button id="posttransition" onclick="showGa()">Ga</button></td>
+    <td>​<button id="metalloid" onclick="showGe()">Ge</button></td>
+    <td>​<button id="metalloid" onclick="showAs()">As</button></td>
+    <td>​<button id="nonmetal" onclick="showSe()">Se</button></td>
+    <td>​<button id="nonmetal" onclick="showBr()">Br</button></td>
+    <td><button id="noble" onclick="showKr()">Kr</button></td>
+
+
+</table>
+<br>
+<h6>
+<p>Next step: cleaner coding by using objects <br>
+Find a way to identify which button was pressed<br>
+Use this to call variable -> variable.name -> ? -> profit
+</p>
+<p>To be continued...</p>
+</h6>
+
+  <script src="script.js"></script>
+ </body>
+</html>

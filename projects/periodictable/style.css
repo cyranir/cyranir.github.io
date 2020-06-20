@@ -1,0 +1,87 @@
+table {
+  font-family: Calibri, sans-serif;
+}
+
+#featuredElement {
+ width: 12vw;
+ border-radius: 0.8vw;
+}
+
+#num {
+  font-size: 1vw;
+  padding-left: 1vw;
+}
+
+#w {
+  font-size: 1vw;
+  text-align: right;
+  padding-right: 1vw;
+  }
+
+#sym {
+  font-size: 6vw;
+  text-align: center;
+}
+
+#name {
+  font-size: 2vw;
+  text-align: center;
+  padding-bottom: 1vw;
+}
+
+
+h1 {
+  font-family: Calibri, sans-serif;
+}
+
+p {
+  font-family: Calibri, sans-serif;
+}
+
+button {
+border: none;
+border-radius: 0.5vw;
+width: 4vw;
+height: 4vw;
+display: inline-block;
+
+}
+
+#alkali {
+  background-color: lightcoral;
+}
+
+#alkaline {
+  background-color: burlywood;
+}
+
+#nonmetal {
+  background-color: rgb(255, 255, 128);
+}
+
+#noble {
+  background-color: lightskyblue;
+}
+
+#metalloid {
+  background-color: darkorange;
+}
+
+#posttransition {
+  background-color: lightgrey;
+}
+
+#transition {
+  background-color: pink;
+}
+
+#empty1 {
+  background-color: white;
+  color: white;
+}
+
+#empty2 {
+  background-color: white;
+  color: white;
+  width: 0.5em;
+}
