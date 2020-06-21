@@ -167,12 +167,13 @@ var e = String(buttonValue); //convert to string to match types
   } else { console.log("no match & throw error ;)"); }
 
 //add more info based on primordial, from decay or synthetic
-if (element.occ = "primordial") {
+var occuranceValue = String(element.occ); //convert to string to match types
+if (element.occ === "primordial") {
   var occuranceValue = " meaning that the element consists of nuclides that have existed before the Earth was formed.";
-} else if (element.occ = "from decay"){
+} else if (element.occ === "from decay"){
   var occuranceValue = " meaning that the element occurs from radioactive decay from other elements";
-} else if (element.occ = "synthetic") {
-  var occuranceValue = " meaning that the element can only be produced in laboratories, and that it does occur naturally on Earth."
+} else if (element.occ === "synthetic") {
+  var occuranceValue = " meaning that the element can only be produced in laboratories, and that it does not occur naturally on Earth."
 }
 
 //apply element to featuredElement section
@@ -186,7 +187,13 @@ if (element.occ = "primordial") {
   document.getElementById("name").innerHTML = element.name;
   document.getElementById("type").innerHTML = element.type;
 
-
-
   featuredElement();
+  removeWelcomeText();
+}
+
+function  removeWelcomeText() {
+   var x = document.getElementById("welcomeText");
+   if (x.style.display === "block") {
+     x.style.display = "none";
+   }
 }
