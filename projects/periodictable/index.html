@@ -2,161 +2,301 @@
 <html>
  <head>
   <title>Periodic Table</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cyranir.github.io/styles.css">
  </head>
  <body>
-   <center>
-<h1>Periodic Table</h1>
+   <div id="header">
+     <div class="container">
+       <a id="header-title" href="https://cyranir.github.io/index.html">My Blog</a>
+       <ul id="header-nav">
+         <li><a href="projects.html">Projects</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="mailto:notmyrealemail@example.com?subject=DevelopersDevelopersDevelopers">Contact</a></li>
+       </ul>
+     </div>
+   </div>
+   <div id="content">
+     <center>
+     <h1>Periodic Table</h1>
 
-<div id ="det" style="display:none">
+      <div id ="det" style="display:none">
+        <table id="featuredElement">
+          <tr>
+            <td id="num">num</td>
+            <td id= "w">w</td>
+          </tr>
+          <tr>
+            <td id="sym" colspan="2">sym</td>
+          </tr>
+          <tr>
+            <td id="name" colspan="2">name</td>
+          </tr>
+        </table>
+      </div>
 
-<table id="featuredElement">
-  <tr>
-    <td id="num">num</td>
-    <td id= "w">w</td>
-  </tr>
-  <tr>
-    <td id="sym" colspan="2">sym</td>
-  </tr>
-  <tr>
-    <td id="name" colspan="2">name</td>
-  </tr>
-  </table>
-  </div>
+      <div id="type" style="display:none"></div>
+        <p id="details">click on a symbol to start</p>
+        <!-- header -->
+        <table>
+          <tr>
+            <th>Group</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th></th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+            <th>18</th>
+          </tr>
+          <!-- Period 1-->
+          <tr>
+            <td>Period 1</td>
+            <td>​<button class="nonmetal" id="H" onclick="magicHappens(this.id)">H</button></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>​<button class="noble" id="He" onclick="magicHappens(this.id)">He</button></td>
+          </tr>
+        <!-- period 2-->
+          <tr>
+            <td>Period 2</td>
+            <td><button class="alkali" id="Li" onclick="magicHappens(this.id)">Li</button></td>
+            <td>​<button class="alkaline" id="Be" onclick="magicHappens(this.id)">Be</button></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button class="metalloid" id="B" onclick="magicHappens(this.id)">B</button></td>
+            <td>​<button class="nonmetal" id="C" onclick="magicHappens(this.id)">C</button></td>
+            <td>​<button class="nonmetal" id="N" onclick="magicHappens(this.id)">N</button></td>
+            <td>​<button class="nonmetal" id="O" onclick="magicHappens(this.id)">O</button></td>
+            <td>​<button class="nonmetal" id="F" onclick="magicHappens(this.id)">F</button></td>
+            <td><button class="noble" id="Ne" onclick="magicHappens(this.id)">Ne</button></td>
+          </tr>
+        <!-- period 3 -->
+          <tr>
+            <td>Period 3</td>
+            <td><button class="alkali" id="Na" onclick="magicHappens(this.id)">Na</button></td>
+            <td>​<button class="alkaline" id="Mg" onclick="magicHappens(this.id)">Mg</button></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button class="posttransition" id="Al" onclick="magicHappens(this.id)">Al</button></td>
+            <td>​<button class="metalloid" id="Si" onclick="magicHappens(this.id)">Si</button></td>
+            <td>​<button class="nonmetal" id="P" onclick="magicHappens(this.id)">P</button></td>
+            <td>​<button class="nonmetal" id="S" onclick="magicHappens(this.id)">S</button></td>
+            <td>​<button class="nonmetal" id="Cl" onclick="magicHappens(this.id)">Cl</button></td>
+            <td><button class="noble" id="Ar" onclick="magicHappens(this.id)">Ar</button></td>
+          </tr>
+          <!-- period 4 -->
+          <tr>
+            <td>Period 4</td>
+            <td><button class="alkali" id="K" onclick="magicHappens(this.id)">K</button></td>
+            <td>​<button class="alkaline" id="Ca" onclick="magicHappens(this.id)">Ca</button></td>
+            <td><button class="transition" id="Sc" onclick="magicHappens(this.id)">Sc</button></td>
+            <td></td>
+            <td><button class="transition" id="Ti" onclick="magicHappens(this.id)">Ti</button></td>
+            <td><button class="transition" id="V" onclick="magicHappens(this.id)">V</button></td>
+            <td><button class="transition" id="Cr" onclick="magicHappens(this.id)">Cr</button></td>
+            <td><button class="transition" id="Mn" onclick="magicHappens(this.id)">Mn</button></td>
+            <td><button class="transition" id="Fe" onclick="magicHappens(this.id)">Fe</button></td>
+            <td><button class="transition" id="Co" onclick="magicHappens(this.id)">Co</button></td>
+            <td><button class="transition" id="Ni" onclick="magicHappens(this.id)">Ni</button></td>
+            <td><button class="transition" id="Cu" onclick="magicHappens(this.id)">Cu</button></td>
+            <td><button class="posttransition" id="Zn" onclick="magicHappens(this.id)">Zn</button></td>
+            <td><button class="posttransition" id="Ga" onclick="magicHappens(this.id)">Ga</button></td>
+            <td>​<button class="metalloid" id="Ge" onclick="magicHappens(this.id)">Ge</button></td>
+            <td>​<button class="metalloid" id="As" onclick="magicHappens(this.id)">As</button></td>
+            <td>​<button class="nonmetal" id="Se" onclick="magicHappens(this.id)">Se</button></td>
+            <td>​<button class="nonmetal" id="Br" onclick="magicHappens(this.id)">Br</button></td>
+            <td><button class="noble" id="Kr" onclick="magicHappens(this.id)">Kr</button></td>
+          </tr>
+          <!-- period 5 -->
+          <tr>
+            <td>Period 5</td>
+            <td><button class="alkali" id="Rb" onclick="magicHappens(this.id)">Rb</button></td>
+            <td>​<button class="alkaline" id="Sr" onclick="magicHappens(this.id)">Sr</button></td>
+            <td><button class="transition" id="Y" onclick="magicHappens(this.id)">Y</button></td>
+            <td></td>
+            <td><button class="transition" id="Zr" onclick="magicHappens(this.id)">Zr</button></td>
+            <td><button class="transition" id="Nb" onclick="magicHappens(this.id)">Nb</button></td>
+            <td><button class="transition" id="Mo" onclick="magicHappens(this.id)">Mo</button></td>
+            <td><button class="transition" id="Tc" onclick="magicHappens(this.id)">Tc</button></td>
+            <td><button class="transition" id="Ru" onclick="magicHappens(this.id)">Ru</button></td>
+            <td><button class="transition" id="Rh" onclick="magicHappens(this.id)">Rh</button></td>
+            <td><button class="transition" id="Pd" onclick="magicHappens(this.id)">Pd</button></td>
+            <td><button class="transition" id="Ag" onclick="magicHappens(this.id)">Ag</button></td>
+            <td><button class="posttransition" id="Cd" onclick="magicHappens(this.id)">Cd</button></td>
+            <td><button class="posttransition" id="In" onclick="magicHappens(this.id)">In</button></td>
+            <td>​<button class="posttransition" id="Sn" onclick="magicHappens(this.id)">Sn</button></td>
+            <td>​<button class="metalloid" id="Sb" onclick="magicHappens(this.id)">Sb</button></td>
+            <td>​<button class="metalloid" id="Te" onclick="magicHappens(this.id)">Te</button></td>
+            <td>​<button class="nonmetal" id="I" onclick="magicHappens(this.id)">I</button></td>
+            <td><button class="noble" id="Xe" onclick="magicHappens(this.id)">Xe</button></td>
+          </tr>
+          <!-- period 6 -->
+          <tr>
+            <td>Period 6</td>
+            <td><button class="alkali" id="Cs" onclick="magicHappens(this.id)">Cs</button></td>
+            <td>​<button class="alkaline" id="Ba" onclick="magicHappens(this.id)">Ba</button></td>
+            <td><button class="lanthanide" id="La" onclick="magicHappens(this.id)">La</button></td>
+            <td>*</td>
+            <td><button class="transition" id="Hf" onclick="magicHappens(this.id)">Hf</button></td>
+            <td><button class="transition" id="Ta" onclick="magicHappens(this.id)">Ta</button></td>
+            <td><button class="transition" id="W" onclick="magicHappens(this.id)">W</button></td>
+            <td><button class="transition" id="Re" onclick="magicHappens(this.id)">Re</button></td>
+            <td><button class="transition" id="Os" onclick="magicHappens(this.id)">Os</button></td>
+            <td><button class="transition" id="Ir" onclick="magicHappens(this.id)">Ir</button></td>
+            <td><button class="transition" id="Pt" onclick="magicHappens(this.id)">Pt</button></td>
+            <td><button class="transition" id="Au" onclick="magicHappens(this.id)">Au</button></td>
+            <td><button class="posttransition" id="Hg" onclick="magicHappens(this.id)">Hg</button></td>
+            <td><button class="posttransition" id="Tl" onclick="magicHappens(this.id)">Tl</button></td>
+            <td>​<button class="posttransition" id="Pb" onclick="magicHappens(this.id)">Pb</button></td>
+            <td>​<button class="posttransition" id="Bi" onclick="magicHappens(this.id)">Bi</button></td>
+            <td>​<button class="posttransition" id="Po" onclick="magicHappens(this.id)">Po</button></td>
+            <td>​<button class="metalloid" id="At" onclick="magicHappens(this.id)">At</button></td>
+            <td><button class="noble" id="Rn" onclick="magicHappens(this.id)">Rn</button></td>
+          </tr>
+          <!-- period 7 -->
+          <tr>
+            <td>Period 7</td>
+            <td><button class="alkali" id="Fr" onclick="magicHappens(this.id)">Fr</button></td>
+            <td>​<button class="alkaline" id="Ra" onclick="magicHappens(this.id)">Ra</button></td>
+            <td><button class="actinide" id="Ac" onclick="magicHappens(this.id)">Ac</button></td>
+            <td>**</td>
+            <td><button class="transition" id="Rf" onclick="magicHappens(this.id)">Rf</button></td>
+            <td><button class="transition" id="Db" onclick="magicHappens(this.id)">Db</button></td>
+            <td><button class="transition" id="Sg" onclick="magicHappens(this.id)">Sg</button></td>
+            <td><button class="transition" id="Bh" onclick="magicHappens(this.id)">Bh</button></td>
+            <td><button class="transition" id="Hs" onclick="magicHappens(this.id)">Hs</button></td>
+            <td><button class="unknown" id="Mt" onclick="magicHappens(this.id)">Mt</button></td>
+            <td><button class="unknown" id="Ds" onclick="magicHappens(this.id)">Ds</button></td>
+            <td><button class="unknown" id="Rg" onclick="magicHappens(this.id)">Rg</button></td>
+            <td><button class="posttransition" id="Cn" onclick="magicHappens(this.id)">Cn</button></td>
+            <td><button class="unknown" id="Nh" onclick="magicHappens(this.id)">Nh</button></td>
+            <td>​<button class="unknown" id="Fl" onclick="magicHappens(this.id)">Fl</button></td>
+            <td>​<button class="unknown" id="Mc" onclick="magicHappens(this.id)">Mc</button></td>
+            <td>​<button class="unknown" id="Lv" onclick="magicHappens(this.id)">Lv</button></td>
+            <td>​<button class="unknown" id="Ts" onclick="magicHappens(this.id)">Ts</button></td>
+            <td><button class="unknown" id="Og" onclick="magicHappens(this.id)">Og</button></td>
+          </tr>
 
-<div id="type" style="display:none"></div>
+          <tr>
+            <td id="hiddentext">Hi!</td>
+          </tr>
+          <!-- lantahnides -->
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>*</td>
+            <td><button class="lanthanide" id="Ce" onclick="magicHappens(this.id)">Ce</button></td>
+            <td><button class="lanthanide" id="Pr" onclick="magicHappens(this.id)">Pr</button></td>
+            <td><button class="lanthanide" id="Nd" onclick="magicHappens(this.id)">Nd</button></td>
+            <td><button class="lanthanide" id="Pm" onclick="magicHappens(this.id)">Pm</button></td>
+            <td><button class="lanthanide" id="Sm" onclick="magicHappens(this.id)">Sm</button></td>
+            <td><button class="lanthanide" id="Eu" onclick="magicHappens(this.id)">Eu</button></td>
+            <td><button class="lanthanide" id="Gd" onclick="magicHappens(this.id)">Gd</button></td>
+            <td><button class="lanthanide" id="Tb" onclick="magicHappens(this.id)">Tb</button></td>
+            <td><button class="lanthanide" id="Dy" onclick="magicHappens(this.id)">Dy</button></td>
+            <td><button class="lanthanide" id="Ho" onclick="magicHappens(this.id)">Ho</button></td>
+            <td><button class="lanthanide" id="Er" onclick="magicHappens(this.id)">Er</button></td>
+            <td><button class="lanthanide" id="Tm" onclick="magicHappens(this.id)">Tm</button></td>
+            <td><button class="lanthanide" id="Yb" onclick="magicHappens(this.id)">Yb</button></td>
+            <td><button class="lanthanide" id="Lu" onclick="magicHappens(this.id)">Lu</button></td>
+            <td></td>
+          </tr>
+          <!-- Actinides -->
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>**</td>
+            <td><button class="actinide" id="Th" onclick="magicHappens(this.id)">Th</button></td>
+            <td><button class="actinide" id="Pa" onclick="magicHappens(this.id)">Pa</button></td>
+            <td><button class="actinide" id="U" onclick="magicHappens(this.id)">U</button></td>
+            <td><button class="actinide" id="Np" onclick="magicHappens(this.id)">Np</button></td>
+            <td><button class="actinide" id="Pu" onclick="magicHappens(this.id)">Pu</button></td>
+            <td><button class="actinide" id="Am" onclick="magicHappens(this.id)">Am</button></td>
+            <td><button class="actinide" id="Cm" onclick="magicHappens(this.id)">Cm</button></td>
+            <td><button class="actinide" id="Bk" onclick="magicHappens(this.id)">Bk</button></td>
+            <td><button class="actinide" id="Cf" onclick="magicHappens(this.id)">Cf</button></td>
+            <td><button class="actinide" id="Es" onclick="magicHappens(this.id)">Es</button></td>
+            <td><button class="actinide" id="Fm" onclick="magicHappens(this.id)">Fm</button></td>
+            <td><button class="actinide" id="Md" onclick="magicHappens(this.id)">Md</button></td>
+            <td><button class="actinide" id="No" onclick="magicHappens(this.id)">No</button></td>
+            <td><button class="actinide" id="Lr" onclick="magicHappens(this.id)">Lr</button></td>
+            <td></td>
+          </tr>
+        </table>
+        <br>
+        <a href="https://cyranir.github.io/projects.html">Go back to projects</a>
+        <h6>
+          <p>To be continued...</p>
+        </h6>
+      </div>
+      <div id="footer">
+        <div class="container">
 
+          <div class="column">
+            <h4>My Links</h4>
+            <p>
+              <a href="https://www.linkedin.com/in/jsferkamp/">LinkedIn</a>
+              <br>
+              <a href="https://twitter.com/erkampj">Twitter</a>
+            </p>
+          </div>
 
-<p id="details">click on a symbol to start</p>
-</center>
-<!-- header -->
-<table>
-  <tr>
-    <th>Group</th>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th></th>
-    <th>4</th>
-    <th>5</th>
-    <th>6</th>
-    <th>7</th>
-    <th>8</th>
-    <th>9</th>
-    <th>10</th>
-    <th>11</th>
-    <th>12</th>
-    <th>13</th>
-    <th>14</th>
-    <th>15</th>
-    <th>16</th>
-    <th>17</th>
-    <th>18</th>
-  </tr>
-  <!-- Period 1-->
-  <tr>
-    <td>Period 1</td>
-    <td>​<button id="nonmetal" onclick="showH()">H</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty2">x</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td>​<button id="noble" onclick="showHe()">He</button></td>
-  </tr>
-<!-- period 2-->
-  <tr>
-    <td>Period 2</td>
-    <td><button id="alkali" onclick="showLi()">Li</button></td>
-    <td>​<button id="alkaline" onclick="showBe()">Be</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty2">x</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="metalloid" onclick="showB()">B</button></td>
-    <td>​<button id="nonmetal" onclick="showC()">C</button></td>
-    <td>​<button id="nonmetal" onclick="showN()">N</button></td>
-    <td>​<button id="nonmetal" onclick="showO()">O</button></td>
-    <td>​<button id="nonmetal" onclick="showF()">F</button></td>
-    <td><button id="noble" onclick="showNe()">Ne</button></td>
-  </tr>
-<!-- period 3 -->
-  <tr>
-    <td>Period 3</td>
-    <td><button id="alkali" onclick="showNa()">Na</button></td>
-    <td>​<button id="alkaline" onclick="showMg()">Mg</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty2">x</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="empty1">X</button></td>
-    <td><button id="posttransition" onclick="showAl()">Al</button></td>
-    <td>​<button id="metalloid" onclick="showSi()">Si</button></td>
-    <td>​<button id="nonmetal" onclick="showP()">P</button></td>
-    <td>​<button id="nonmetal" onclick="showS()">S</button></td>
-    <td>​<button id="nonmetal" onclick="showCl()">Cl</button></td>
-    <td><button id="noble" onclick="showAr()">Ar</button></td>
-  </tr>
-  <!-- period 4 -->
-  <tr>
-    <td>Period 4</td>
-    <td><button id="alkali" onclick="showK()">K</button></td>
-    <td>​<button id="alkaline" onclick="showCa()">Ca</button></td>
-    <td><button id="transition" onclick="showSc()">Sc</button></td>
-    <td><button id="empty2">x</button></td>
-    <td><button id="transition" onclick="showTi()">Ti</button></td>
-    <td><button id="transition" onclick="showV()">V</button></td>
-    <td><button id="transition" onclick="showCr()">Cr</button></td>
-    <td><button id="transition" onclick="showMn()">Mn</button></td>
-    <td><button id="transition" onclick="showFe()">Fe</button></td>
-    <td><button id="transition" onclick="showCo()">Co</button></td>
-    <td><button id="transition" onclick="showNi()">Ni</button></td>
-    <td><button id="transition" onclick="showCu()">Cu</button></td>
-    <td><button id="posttransition" onclick="showZn()">Zn</button></td>
-    <td><button id="posttransition" onclick="showGa()">Ga</button></td>
-    <td>​<button id="metalloid" onclick="showGe()">Ge</button></td>
-    <td>​<button id="metalloid" onclick="showAs()">As</button></td>
-    <td>​<button id="nonmetal" onclick="showSe()">Se</button></td>
-    <td>​<button id="nonmetal" onclick="showBr()">Br</button></td>
-    <td><button id="noble" onclick="showKr()">Kr</button></td>
+          <div class="column">
+            <h4>My Story</h4>
+            <p>Hi there! Thanks for visiting! <p></p><em>Oh, and I'm supposed to write that I'm an aspiring web developer.</em></p>
+          </div>
 
-
-</table>
-<br>
-<a href="https://cyranir.github.io/projects.html">Go back to projects</a>
-<h6>
-<p>Next step: cleaner coding by using objects <br>
-Find a way to identify which button was pressed<br>
-Use this to call variable -> variable.name -> ? -> profit
-</p>
-<p>To be continued...</p>
-</h6>
-
-  <script src="script.js"></script>
- </body>
+        </div>
+      </div>
+    <script src="script2.js"></script>
+  </body>
 </html>
