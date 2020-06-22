@@ -137,11 +137,16 @@ table {
 }
 
 button {
-border: none;
-border-radius: 0.5vw;
-width: 4vw;
-height: 4vw;
-display: inline-block;
+  border: none;
+  border-radius: 0.5vw;
+  width: 4vw;
+  height: 4vw;
+  display: inline-block;
+}
+
+#newrandomfact {
+  width: 250px;
+  height: 50px;
 }
 
 #featuredElement{
