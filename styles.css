@@ -226,3 +226,25 @@ button {
 .unknown {
   background-color: whitesmoke;
 }
+
+#bouncyball {
+  height: 10vw;
+  width: 10vw;
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.luckyinput {
+  max-width: 40px;
+}
+
+#raffle {
+  width: 20vw;
+  background-color: #1abc9c;
+}
+
+.calculatingLuck {
+  font-size: 2px;
+}

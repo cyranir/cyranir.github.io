@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Lucky You Land® Lotto!</title>
+  <link rel="stylesheet" href="../../styles.css">
+ </head>
+ <body>
+   <div id="header">
+     <div class="container">
+       <a id="header-title" href="https://cyranir.github.io/index.html">My Blog</a>
+       <ul id="header-nav">
+         <li><a href="projects.html">Projects</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="mailto:notmyrealemail@example.com?subject=DevelopersDevelopersDevelopers">Contact</a></li>
+       </ul>
+     </div>
+   </div>
+     <div id="content">
+      <div class="container">
+         <div class="project">
+           <center>
+             <h1>Lucky You Land®</h1>
+             <h3>Can you pick the winning numbers?</h3>
+             <p>Select your lucky numbers out of one character and five numbers</p>
+             <table border="0">
+               <tr>
+                 <td>Character</td>
+                 <td colspan="5">Numbers</td>
+               </tr>
+               <tr>
+                 <td><input type="text" id="lucky0" maxlength="1" onkeydown="return alphaOnly(event);" oninput="this.value = this.value.toUpperCase();" size="3" placeholder="A"></td>
+                 <td><input type="number" class="luckyinput" id="lucky1" maxlength="1" min="0" max="9" onkeydown="return numOnly(event);" oninput="maxLengthCheck(this)" placeholder="1"></td>
+                 <td><input type="number" class="luckyinput" id="lucky2" maxlength="1" min="0" max="9" onkeydown="return numOnly(event);" oninput="maxLengthCheck(this)" placeholder="2"></td>
+                 <td><input type="number" class="luckyinput" id="lucky3" maxlength="1" min="0" max="9" onkeydown="return numOnly(event);" oninput="maxLengthCheck(this)" placeholder="3"></td>
+                 <td><input type="number" class="luckyinput" id="lucky4" maxlength="1" min="0" max="9" onkeydown="return numOnly(event);" oninput="maxLengthCheck(this)" placeholder="4"></td>
+                 <td><input type="number" class="luckyinput" id="lucky5" maxlength="1" min="0" max="9" onkeydown="return numOnly(event);" oninput="maxLengthCheck(this)" placeholder="5"></td>
+               </tr>
+             </table>
+             <div id ="results" style="display:none">
+               <p id="result"></p>
+             </div>
+             <br><br>
+             <button id="raffle" onclick="lottery()">Let's check my luck!</button>
+             <p></p>
+           </center>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="container">
+
+          <div class="column">
+            <h4>My Links</h4>
+            <p>
+              <a href="https://www.linkedin.com/in/jsferkamp/">LinkedIn</a>
+              <br>
+              <a href="https://twitter.com/erkampj">Twitter</a>
+            </p>
+          </div>
+
+          <div class="column">
+            <h4>My Story</h4>
+            <p>Hi there! Thanks for visiting! <p></p><em>Oh, and I'm supposed to write that I'm an aspiring web developer.</em></p>
+          </div>
+
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
