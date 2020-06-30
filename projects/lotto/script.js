@@ -57,7 +57,7 @@ var dd = Math.random().toString(10).substr(3,1);
 var ee = Math.random().toString(10).substr(3,1);
 var ff = Math.random().toString(10).substr(3,1);
 
-console.log(aa,bb,cc,dd,ee,ff);
+//console.log(aa,bb,cc,dd,ee,ff);
 
 //compare characters & numbers
 if ((a == aa) & (b == bb) & (c == cc) & (d == dd) & (e == ee) & (f == ff)) {

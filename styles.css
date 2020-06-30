@@ -240,11 +240,7 @@ button {
   max-width: 40px;
 }
 
-#raffle {
-  width: 20vw;
+#raffle, #generate {
+  width: 300px;
   background-color: #1abc9c;
-}
-
-.calculatingLuck {
-  font-size: 2px;
 }

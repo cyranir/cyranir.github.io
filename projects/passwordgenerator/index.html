@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Random Super Strong Password Generator</title>
+  <link rel="stylesheet" href="../../styles.css">
+ </head>
+ <body>
+   <div id="header">
+     <div class="container">
+       <a id="header-title" href="https://cyranir.github.io/index.html">My Blog</a>
+       <ul id="header-nav">
+         <li><a href="../../projects.html">Projects</a></li>
+         <li><a href="../../about.html">About</a></li>
+         <li><a href="mailto:notmyrealemail@example.com?subject=DevelopersDevelopersDevelopers">Contact</a></li>
+       </ul>
+     </div>
+   </div>
+     <div id="content">
+      <div class="container">
+         <div class="project">
+           <center>
+             <h1>Random Password Generator</h1>
+             <h3>Why think of a password when you can have a computer do the work for you?</h3>
+           </center>
+           <form action="/action_page.php">
+           <p>What type of characters should the password contain?</p>
+             <p><input type="radio" id="fullmonty" name="passwordtype" value="full" checked>
+              <label for="full">Password with character, numbers and special signs</label><br>
+             <input type="radio" id="charnum" name="passwordtype" value="charnum">
+             <label for="charnum">Password with characters and numbers</label><br>
+             <input type="radio" id="char" name="passwordtype" value="char">
+           <label for="char">Password with characters only</label></p>
+           </form>
+             <p>What is the password length?</p>
+             <p><input type="number" id="passwordLength" onkeydown="return numOnly(event);" placeholder="16"</input></p>
+             <p></p>
+             <button id="generate" onclick="generatePassword()">Generate me a password please!</button>
+             <p></p>
+
+             <div id ="showPasswordResult" style="display:none">
+             <p>Your password:</p>
+             <p id="passwordResult"></p>
+           </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="container">
+
+          <div class="column">
+            <h4>My Links</h4>
+            <p>
+              <a href="https://www.linkedin.com/in/jsferkamp/">LinkedIn</a>
+              <br>
+              <a href="https://twitter.com/erkampj">Twitter</a>
+            </p>
+          </div>
+
+          <div class="column">
+            <h4>My Story</h4>
+            <p>Hi there! Thanks for visiting! <p></p><em>Oh, and I'm supposed to write that I'm an aspiring web developer.</em></p>
+          </div>
+
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
